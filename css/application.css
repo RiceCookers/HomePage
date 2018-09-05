@@ -1,3 +1,4 @@
-h1 {
-  color: red;
-}
+@import "../vendor/css/bootstrap-grid.min.css";
+@import "../vendor/css/bootstrap-reboot.min.css";
+@import "../vendor/css/bootstrap.min.css";
+@import "../vendor/css/new-age.min.css";
