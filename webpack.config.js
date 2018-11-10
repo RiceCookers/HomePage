@@ -31,7 +31,15 @@ module.exports = [{
         })
       }, {
         test: /\.(jpg|png)$/,
-        use: 'file-loader?name=vender/img/bg/[name].[ext]'
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+                name: '[name].[ext]',
+                outputPath : 'images/'
+            }
+          }
+        ]
       }
     ]
   },
